@@ -92,13 +92,13 @@ class ProductManager {
 const funcionAsync = async () => {
     const productManager = new ProductManager()
     console.log(await productManager.getProducts())
-    await productManager.addProduct("producto 1", "Este es un producto prueba", 100, "Sin imagen", "def456", 30)
+    await productManager.addProduct("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25)
     await productManager.getProducts()
-    await productManager.addProduct("producto 1", "Este es un producto prueba", 100, "Sin imagen", "def456", 30)
+    await productManager.addProduct("producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25)
     console.log(await productManager.getProducts())
     await productManager.getProductsById(2)
-    await productManager.addProduct("producto 2 ", "Este es un producto prueba 2", 180, "Sin imagen", "abc454", 12)
-    await productManager.updateProducts(2, { "title": "producto prueba 2 ", "description": "Este es un producto prueba 2", "price": 180, "thumbnail": "Sin imagen", "code": "abc454", "stock": 12, "id": 3 })
+    await productManager.addProduct("producto 2 ", "Este es un producto prueba 23", 150, "Sin imagen", "abc1231", 25)
+    await productManager.updateProducts(2, { "title": "producto prueba 25", "description": "Este es un producto prueba 23", "price": 150, "thumbnail": "Sin imagen", "code": "abc1231", "stock": 25, "id": 5 })
     await productManager.deleteProduct(2)
 };
 
