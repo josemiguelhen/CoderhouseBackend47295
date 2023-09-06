@@ -1,0 +1,19 @@
+
+{{#each products}}
+<p>
+    {{this.title}}
+</p>
+
+
+<p>
+    {{this.descripction}}
+</p>
+{{/each}}
+
+<button type="button" id="btn-1">Actualizar productos</button>
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
